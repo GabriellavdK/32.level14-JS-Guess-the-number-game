@@ -10,15 +10,13 @@ let attempts = 4;
 
 while ((attempts != 0) && (guess != guessNumber))
 {
+	alert("Dat is niet correct");
 	if (attempts > 1) {
-		alert("Dat is niet correct");
 		guess = prompt("Voer een ander nummer in van 0 tot 25 in, je hebt nog " + attempts + " pogingen over.");
-		attempts--;
 	} else {
-		alert("Dat is niet correct");
 		guess = prompt("Voer een ander nummer in van 0 tot 25 in, dit is je laatste poging!");
-		attempts--;
 	}
+	attempts--;
 }
 
 if (guess === guessNumber) {
